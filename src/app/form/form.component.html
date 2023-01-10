@@ -1,0 +1,8 @@
+<form [formGroup]="formValue">
+
+  <p>Nome: <input type="text" formControlName="nome" required></p>
+  <p>Idade: <input type="number" formControlName="idade"></p>
+  <p>Email: <input type="email" formControlName="email" required></p>
+</form>
+<app-save [formValue]="formValue"></app-save>
+
